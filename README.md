@@ -6,7 +6,7 @@ Dashboard Visualization of Potential Drug Drug Interactions
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/your-username/flask-application.git
+   git clone [https://github.com/tavlab-iiitd/ContraIndicator.git]
    
 2. Navigate to the project directory:  
 
@@ -29,17 +29,18 @@ Dashboard Visualization of Potential Drug Drug Interactions
       http://localhost:9000
 
   
-
-
-
-
 ## Introduction
-The main focus of the application is to display the presence and severity of various interactions between about 2000 drugs. The application provides a clean responsive user interface that can be used to get ultrafast results with minimal steps. 
+The purpose of this application is to provide a user-friendly interface for displaying the presence and severity of interactions between approximately 2000 drugs. The application is designed to deliver fast results with minimal effort.
+
 ## Dashboard
-As soon as you open the application, you can find an input field where you can enter drug names along with some buttons like "Add Tag", "Confirm" and "Reset List".
+Upon opening the application, you will immediately notice an input field where you can enter the names of drugs. The dashboard also includes buttons such as "Add Tag," "Confirm," and "Reset List."
+
 ## Features and Usage
-Click on the input field to display the list of all the drugs to choose from. As you type the common name of your desired drug, the search results are displayed on the dropdown menu and you can select using up/down arrow keys and add by simply clicking on the 'Add Tag" button or hitting the 'enter' key on your keyboard. This will add the drug as a tag and show up above the input field. You can keep track of all the drugs being added here and remove if you wish to. 
+To begin, click on the input field to view a dropdown menu containing a list of available drugs. As you type the common name of the desired drug, the search results will be displayed in the dropdown. You can navigate through the options using the up and down arrow keys and add a drug by clicking the "Add Tag" button or pressing the "enter" key on your keyboard. The added drug will appear as a tag above the input field. If needed, you can remove any drug from the list.
 
-Once you add the drugs of your choice, press "Confirm" or hit "Shift + Enter" on your keyboard to confirm all the drugs you added for another time before submitting. You may still choose to remove unwanted drugs at this point.
+Once you have added all the desired drugs, press the "Confirm" button or press "Shift + Enter" on your keyboard to review the list before submitting. At this point, you can still remove any unwanted drugs.
 
-Then, simply click on "Submit" to submit the list of drugs and our API will provide you with lightning fast results showing the various interactions between the drugs if present. 
+Finally, click on the "Submit" button to send the list of drugs. Our API will rapidly generate results, displaying the various interactions between the drugs, if any exist.
+
+## Interaction History with Circos Plots
+The application also allows you to view the interaction history of drugs through Circos plots. You can specify a date range, indicating the start and end dates, to see the interactions that occurred within that period. The Circos plots provide visual representations of the interactions, making it easier to interpret the data.
