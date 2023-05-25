@@ -1,46 +1,54 @@
-# ContraIndicator
-Dashboard Visualization of Potential Drug Drug Interactions
+# Contraindicator - User Guide
+
+A simple guide on how to install and use Contraindicator - the drug interaction web application made under Dr. Tavpritesh Sethi @TavLabs, IIIT Delhi. 
+
+The application can be installed at:
+https://github.com/vens8/ddinter/releases
 
 ## Installation
+Download the contraindicator_setup.exe setup file.
 
-1. Clone the repository:
+Open to install, click next until the installation process is complete.
 
-   ```shell
-   git clone [https://github.com/tavlab-iiitd/ContraIndicator.git]
-   
-2. Navigate to the project directory:  
+Setup - Select Destination Location
 
-   cd flask-application
-  
-3. Create a virtual environment (optional but recommended): 
-   python3 -m venv venv
-   source venv/bin/activate
+![Setup - Select Destination Location](https://github.com/vens8/ddinter/blob/main/screenshots/setup1.png)
 
-4. Install the required packages:
-   pip install -r requirements.txt  
-  
-  ## Running the Application
-  1. Go to working Dir:
-     cd  api 
-  2. Start the Flask development server:
-     Python       wsgi.py
-  
-  3. Open your web browser and visit 
-      http://localhost:7789
+Setup - Create Desktop Shortcut
 
-  
+![Setup - Create Desktop Shortcut](https://github.com/vens8/ddinter/blob/main/screenshots/setup2.png)
+
+Setup - Click Install
+
+![Setup - Click Install](https://github.com/vens8/ddinter/blob/main/screenshots/setup3.png)
+
+Setup - Launch Application
+
+![Setup - Launch Application](https://github.com/vens8/ddinter/blob/main/screenshots/setup4.png)
+
+Setup - Allow Through Windows Firewall
+
+![Setup - Allow Through Windows Firewall](https://github.com/vens8/ddinter/blob/main/screenshots/setup5.png)
+
+Just like that, the Contraindicator app has been installed on your PC and you can get it by searching on the Windows start menu as well!
+
+## Launching the Application
+Search for "Contraindicator" on the Windows start menu and open it. This will open the web application on localhost on port 5000 on your default web browser.
+
+
 ## Introduction
-The purpose of this application is to provide a user-friendly interface for displaying the presence and severity of interactions between approximately 2000 drugs. The application is designed to deliver fast results with minimal effort.
-
+The main focus of the application is to display the presence and severity of various interactions between about 2000 drugs. The application provides a clean responsive user interface that can be used to get ultrafast results with minimal steps. 
 ## Dashboard
-Upon opening the application, you will immediately notice an input field where you can enter the names of drugs. The dashboard also includes buttons such as "Add Tag," "Confirm," and "Reset List."
-
+As soon as you open the application, you can find an input field where you can enter drug names along with some buttons like "Add Tag", "Confirm" and "Reset List".
 ## Features and Usage
-To begin, click on the input field to view a dropdown menu containing a list of available drugs. As you type the common name of the desired drug, the search results will be displayed in the dropdown. You can navigate through the options using the up and down arrow keys and add a drug by clicking the "Add Tag" button or pressing the "enter" key on your keyboard. The added drug will appear as a tag above the input field. If needed, you can remove any drug from the list.
+Click on the input field to display the list of all the drugs to choose from. As you type the common name of your desired drug, the search results are displayed on the dropdown menu and you can select using up/down arrow keys and add by simply clicking on the 'Add Tag" button or hitting the 'enter' key on your keyboard. This will add the drug as a tag and show up above the input field. You can keep track of all the drugs being added here and remove if you wish to. 
 
-Once you have added all the desired drugs, press the "Confirm" button or press "Shift + Enter" on your keyboard to review the list before submitting. At this point, you can still remove any unwanted drugs.
+Once you add the drugs of your choice, press "Confirm" or hit "Shift + Enter" on your keyboard to confirm all the drugs you added for another time before submitting. You may still choose to remove unwanted drugs at this point.
 
-Finally, click on the "Submit" button to send the list of drugs. Our API will rapidly generate results, displaying the various interactions between the drugs, if any exist.
-
-## Interaction History with Circos Plots
-The application also allows you to view the interaction history of drugs through Circos plots. You can specify a date range, indicating the start and end dates, to see the interactions that occurred within that period. The Circos plots provide visual representations of the interactions, making it easier to interpret the data.
+Then, simply click on "Submit" to submit the list of drugs and our API will provide you with lightning fast results showing the various interactions between the drugs if present. 
+## Authors
+- [Dr.Tavpritesh Sethi](https://github.com/tavlab-iiitd)
+- [Akshaya](https://github.com/Akshaya-Devadiga)
+- [Pradeep Singh](https://github.com/pradeepsinghnitk)
+- [Rahul Maddula](https://www.github.com/vens8)
+- [Vatsal Lakhmani](https://www.github.com/mitsreese)
