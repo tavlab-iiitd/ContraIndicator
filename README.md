@@ -23,10 +23,10 @@ Dashboard Visualization of Potential Drug Drug Interactions
   1. Go to working Dir:
      cd  api 
   2. Start the Flask development server:
-     Python main.py
+     Python       wsgi.py
   
   3. Open your web browser and visit 
-      http://localhost:9000
+      http://localhost:7789
 
   
 ## Introduction
