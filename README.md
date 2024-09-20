@@ -118,8 +118,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ### **Contributors**
 
-- **TAVLab, IIIT-Delhi** – Research and Development Team
-- **Your Name (Optional)** – Developer or Contributor
+- **TavLab, IIIT-Delhi** – Research and Development Team
 
 ---
 
