@@ -1,4 +1,3 @@
-Here’s a more polished and organized version of your README file for GitHub. I’ve added some styling and section headers to improve readability and make it visually appealing.
 
 ---
 
