@@ -97,7 +97,7 @@ Access the tool at:
 ### Launch the GUI:
 ```bash
 cd GUI
-python ContraIndicator_GUI.py
+Run runner.exe
 ```
 
 - A desktop app window will appear.
