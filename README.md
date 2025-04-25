@@ -38,15 +38,9 @@ This tool was developed as part of the research:
 ## 🗂️ Folder Structure
 
 ```
-ContraIndicator/
-├── flask-application/
-│   ├── api/                # Flask API for web tool
-│   └── templates/          # HTML templates
+ContraIndicator/       
 ├── GUI/                    # Standalone GUI app
-├── DDI_data/               # Drug interaction database (CSV/JSON)
-├── utils/                  # Shared utilities
-├── README.md
-└── requirements.txt
+├── WEB/
 ```
 
 ---
@@ -184,7 +178,4 @@ Please refer to the [LICENSE](LICENSE) file for terms.
 
 - **TavLab, IIIT-Delhi** – Research, Design, and Development  
 - Open for collaboration and contributions!
-
-
-
 
