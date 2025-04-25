@@ -1,4 +1,4 @@
-
+import os
 import base64
 import sqlite3
 from nxviz.plots import CircosPlot
@@ -6,10 +6,11 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import io
 import traceback
-from flask import Flask, render_template, request, send_from_directory
+from flask import Flask, request, redirect, url_for, render_template, send_from_directory
 from flask import jsonify
 import networkx as nx
-
+import docx2txt
+import spacy
 # import configparser
 # from logging import FileHandler,WARNING
 
@@ -20,7 +21,25 @@ drugsList, sortedInteractionDictionary, drugSynonyms = {}, {}, {}
 # file_handler = FileHandler('errorlog.txt')
 # file_handler.setLevel(WARNING)
 
+df_ddinter = pd.read_csv('./DDInterTable.csv')
+drugs_major = df_ddinter['Drug_A']
+drugs_major = list(set(drugs_major.append(df_ddinter['Drug_B'])))
+# Load the biomedical Spacy model
+med7 = spacy.load("en_ner_bc5cdr_md")
+
 app = Flask(__name__)
+
+
+
+app.config['UPLOAD_FOLDER_drug'] = '/home/ankit_hitesh/ICU_work/Server/working/drug_files_upload'
+app.config['ALLOWED_EXTENSIONS_drug'] = {'docx'}
+
+if not os.path.exists(app.config['UPLOAD_FOLDER_drug']):
+    os.makedirs(app.config['UPLOAD_FOLDER_drug'])
+
+def allowed_file1(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in app.config['ALLOWED_EXTENSIONS_drug']
+
 
 
 @app.route('/')
@@ -241,6 +260,57 @@ def retrieveData():
 
 	# Return the base64-encoded image as the response
 	return img_base64
+
+def extract_text_from_docx(filepath):
+    """ Extracts text from a .docx file and identifies drug mentions """
+
+    try:
+        MY_TEXT = docx2txt.process(filepath)
+        nlp_doc = med7(MY_TEXT)
+
+        # Extract drug mentions from the document
+        drugs = []
+        for ent in nlp_doc.ents:
+            if ent.text in drugs_major and ent.label_ == 'CHEMICAL' and ent.text not in drugs:
+                drugs.append(ent.text)
+        print(drugs)
+
+        return {"extracted_text": MY_TEXT, "identified_drugs": drugs}
+    
+    except Exception as e:
+        return {"error": f"Error reading document: {e}"}
+
+    
+
+@app.route('/upload_drug_file', methods=['POST'])
+def upload1_file():
+    if 'user_id' not in session:
+        return redirect('/login')
+    if 'file' not in request.files:
+        return jsonify({'error': 'No file part in the request'}), 400
+
+    file = request.files['file']
+    if file.filename == '':
+        return jsonify({'error': 'No file selected'}), 400
+    print(file.filename)
+    if file and allowed_file1(file.filename):
+        filepath = os.path.join(app.config['UPLOAD_FOLDER_drug'], file.filename)
+        try:
+          file.save(filepath)
+          print(f"File successfully saved to {filepath}")
+          # Extract text from the .docx file
+          extracted_text = extract_text_from_docx(filepath)
+
+        except Exception as e:
+          print(f"Error saving file: {e}")
+
+
+        return jsonify({'message': 'File uploaded successfully', 'filepath': filepath,'drug_list':extracted_text["identified_drugs"]}), 200
+
+    return jsonify({'error': 'Unsupported file format'}), 400
+
+
+
 
 
 if __name__ == "__main__":
