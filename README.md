@@ -1,62 +1,126 @@
+# 🚨 **ContraIndicator**
+
+**ContraIndicator** is an integrated tool designed to **detect, visualize, and prevent Potential Drug–Drug Interactions (PDDIs)** in clinical practice. This tool helps clinicians and researchers by providing a reliable platform to analyze prescriptions and evaluate the safety of combined drug use, especially in **critical care settings**.
+
+This tool was developed as part of the research:  
+📄 *"ContraIndicator: A Natural Language Processing-Based Approach to Potential Drug-Drug Interaction Detection in Pediatric Intensive Care"* – published by **TavLab, IIIT-Delhi**.
 
 ---
 
-# **ContraIndicator**
+## 🌟 **Core Features**
 
-**ContraIndicator** is an intuitive web-based application designed to visualize and explore drug interactions. Users can input drug names and instantly review potential interactions, helping to make informed decisions in critical care settings. This app is developed based on the research article **“Potential Drug-Drug Interactions in the Pediatric Intensive Care Unit.”**
+### 🔹 ContraIndicator Web Tool
+- Upload `.doc` prescriptions written by clinicians.
+- NLP-based drug extraction and mapping.
+- Drug–drug interaction check with visual alerts.
+- Historical analysis with Circos visualizations.
 
----
-
-## **Features**
-- **Drug Interaction Visualization**: Easily input drug names and instantly view potential interactions.
-- **User-Friendly Dashboard**: Simple and intuitive interface for adding and confirming drugs.
-- **Interaction History with Circos Plots**: View historical interactions between drugs with visual Circos plots.
-  
----
-
-## **Installation**
-
-To install and run the ContraIndicator app locally, follow these steps:
-
-1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/tavlab-iiitd/ContraIndicator.git
-    ```
-
-2. **Navigate to the project directory:**
-    ```bash
-    cd flask-application
-    ```
-
-3. **Create a virtual environment (optional but recommended):**
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate
-    ```
-
-4. **Install the required packages:**
-    ```bash
-    pip install -r requirements.txt
-    ```
+### 🔹 ContraIndicator GUI Tool
+- Standalone GUI for offline use.
+- Write or load prescriptions in `.txt` format.
+- Get interaction alerts as you type.
+- Suitable for bedside or quick use by doctors.
 
 ---
 
-## **Running the Application**
+## 🧠 **Technical Architecture**
 
-1. **Navigate to the working directory:**
-    ```bash
-    cd api
-    ```
+| Component      | Technology        |
+|----------------|------------------|
+| Backend (API)  | Flask (Python)    |
+| GUI Interface  | Tkinter           |
+| NLP Extraction | `docx2txt`, RegEx |
+| Visualization  | HTML, CSS, Circos, Tkinter |
+| Packaging      | `pyinstaller` or native Python |
 
-2. **Start the Flask development server:**
-    ```bash
-    python wsgi.py
-    ```
+---
 
-3. **Open your web browser and visit:**
-    ```
-    http://localhost:7789
-    ```
+## 🗂️ Folder Structure
+
+```
+ContraIndicator/
+├── flask-application/
+│   ├── api/                # Flask API for web tool
+│   └── templates/          # HTML templates
+├── GUI/                    # Standalone GUI app
+├── DDI_data/               # Drug interaction database (CSV/JSON)
+├── utils/                  # Shared utilities
+├── README.md
+└── requirements.txt
+```
+
+---
+
+## 💻 System Requirements
+
+- Python 3.7+
+- OS: Linux, macOS, or Windows
+- RAM: ≥ 4 GB
+- Python dependencies listed in `requirements.txt`
+
+---
+
+## 🧩 Installation Guide
+
+### 🔸 Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/tavlab-iiitd/ContraIndicator.git
+cd ContraIndicator
+```
+
+### 🔸 Step 2: Create a Virtual Environment (Highly Recommended)
+
+```bash
+python3 -m venv venv
+source venv/bin/activate  # For Windows: venv\Scripts\activate
+```
+
+### 🔸 Step 3: Install Required Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Run the Web Application
+
+Navigate to the web API folder:
+
+```bash
+cd flask-application/api
+python wsgi.py
+```
+
+Access the tool at:  
+🌐 [http://localhost:7789](http://localhost:7789)
+
+---
+
+## 🖥️ Run the GUI Application
+
+### Launch the GUI:
+```bash
+cd GUI
+python ContraIndicator_GUI.py
+```
+
+- A desktop app window will appear.
+- Type or paste your treatment chart.
+- Press **“Check Interactions”** to view results.
+- Save or open `.txt` files using the toolbar.
+
+> ✅ *No internet required for GUI usage.*
+
+---
+
+## 📊 Interaction History (Web Tool Only)
+
+- Go to **Circos** tab after checking drugs.
+- View timeline of all past interactions.
+- Filter by patient, date range, or interaction type.
+- Export results if needed.
 
 ---
 
@@ -86,43 +150,41 @@ You can also view the **interaction history** of drugs through visual **Circos p
 
 ---
 
-## **Usage Guide**
 
-1. **Start by adding drugs**:  
-   Use the input field to add drugs from the dropdown or by typing their names.
-
-2. **Review and Confirm**:  
-   After adding the desired drugs, press **"Confirm"** to review the list. You can remove any unwanted drugs at this stage.
-
-3. **Submit for Interaction Analysis**:  
-   Once satisfied with the list, click **"Submit"** to generate interaction results using the API.
-
-4. **Explore Interaction History**:  
-   Use Circos plots to explore historical drug interactions by specifying a date range.
 
 ---
 
-## **Research Reference**
+## 🧪 Sample Use Cases
 
-This application is built based on the research article:  
-**“Potential Drug-Drug Interactions in the Pediatric Intensive Care Unit”**  
-For more details, please refer to the research publication.
+### 👩‍⚕️ Clinician
+- Use the GUI at the bedside to validate treatment plans in real-time.
 
----
+### 🧬 Researcher
+- Upload batch `.doc` prescriptions to explore trends in drug interactions.
 
-## **License**
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-### **Contributors**
-
-- **TavLab, IIIT-Delhi** – Research and Development Team
+### 🧑‍💻 Developer
+- Extend the API or integrate it into hospital EHR systems.
 
 ---
 
-Enjoy using **ContraIndicator** to ensure safe and informed medication practices!  
+## 🔬 Research Backing
+
+This tool is based on research that analyzed drug interactions in critical care settings, specifically pediatric ICUs. It utilizes a curated and validated drug–drug interaction database to ensure clinical relevance.
 
 ---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.  
+Please refer to the [LICENSE](LICENSE) file for terms.
+
+---
+
+## 👥 Contributors
+
+- **TavLab, IIIT-Delhi** – Research, Design, and Development  
+- Open for collaboration and contributions!
+
+
+
 
