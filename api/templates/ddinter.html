@@ -13,6 +13,7 @@
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/componentStyles.css') }}">
+  <link rel="stylesheet" href="/static/drug_upload_file_styles.css">
 </head>
 <body>
   <h1 class="myheading">Contraindicator</h1>
@@ -49,7 +50,22 @@
     </div>
     <div id="notediv" class="card mt-3"></div>
 
-<div class="container mt-5">
+
+    <div class="container mt-5" id="file-upload-page">
+      <!-- <h2 class="mb-4">PDDI History</h2> -->
+      <div class="upload-container" >
+        <h1>Upload a Treatment-Chart</h1>
+        <form id="uploadForm">
+            <div class="file-input">
+                <label for="file">Choose a file:</label>
+                <input type="file" id="file" name="file" required>
+            </div>
+            <button type="submit">Upload</button>
+        </form>
+        <div id="message" class="message"></div>
+    </div>
+
+{% comment %} <div class="container mt-5">
   <h2 class="mb-4">DDI History</h2>
   <div class="row">
     <div class="col-md-6">
@@ -78,14 +94,14 @@
     </div>
   </div>
   <button class="btn btn-primary btn-retrieve" onclick="retrieveData()">Retrieve Data</button>
-</div>
+</div> {% endcomment %}
 <div id="pddiHistoryContainer">
   <!-- PDDI history data will be displayed here -->
 </div>
 
 </main>
 </body>
-  <footer id="footer" class="footer fixed-bottom bg-light">
+  {% comment %} <footer id="footer" class="footer fixed-bottom bg-light">
     <div class="container d-flex justify-content-center">
       <div class="row">
         <div class="col text-center">
@@ -93,6 +109,21 @@
         </div>
       </div>
       <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up"></i></a>
+    </div>
+  </footer> {% endcomment %}
+
+
+  <footer id="footer" class="footer fixed-bottom bg-light">
+    <div class="container d-flex justify-content-center">
+  
+      <div class="row">
+        <div class="col text-center">
+          <span>&copy; Copyright
+            <strong>Tavlabs</strong>. All Rights Reserved</span>
+        </div>
+      </div>
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up"></i></a>
     </div>
   </footer>
 
@@ -102,4 +133,5 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-5fiJTETJOFw2M0ZZULzqOylXjsN0zVg/Nvqt1qrE/8DfhZHTtWWw3fBkCjlLx1qX" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
   <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+  <script src="/static/js/upload_drug_file.js"></script>
 </html>
