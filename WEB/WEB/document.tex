@@ -1,0 +1,113 @@
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[a4paper, margin=0.3in]{geometry} % Decreased margins
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{tabularx} % For dynamic column widths
+\usepackage{calc} % For calculation of lengths
+\usepackage[absolute,overlay]{textpos} % For absolute positioning
+\setlength{\TPHorizModule}{1mm} % Set horizontal unit to mm
+\setlength{\TPVertModule}{1mm} % Set vertical unit to mm
+% Set font size for entire document
+\fontsize{6pt}{7pt}\selectfont
+% Create a special column type for automatic line breaking
+\newcolumntype{Y}{>{\raggedright\arraybackslash\hspace{0pt}\parfillskip=0pt plus 1fil}p}
+\begin{document}\
+% Insert logo at the top-left
+\noindent
+\begin{minipage}{0.2\textwidth} % Adjust width as needed
+    \includegraphics[width=2cm]{RESOURCES/AIIMS_LOGO.png} % Adjust width as needed
+\end{minipage}\
+\vspace{-1cm} % Adjust this value to position the logo at the top
+\hfill
+\fontsize{5pt}{7pt}\selectfont % Header font size
+\begin{center}\
+    \textbf{Default Heading} \\
+    \textbf{Default Subheading} \\
+\end{center}
+\fontsize{6pt}{7pt}\selectfont % Restore main font size
+% Keep original upper tables unchanged
+\noindent\begin{tabular}{|p{5cm}|p{4cm}|p{2.5cm}|p{1.5cm}|p{3cm}|}
+    \hline
+    \textbf{Name:} dummy & \textbf{Age:} 3 years 3 months & \textbf{Gender:} Male & \textbf{Bed:} 12 & \textbf{UHID:} 123456789 \\
+    \hline
+    \multicolumn{5}{|p{19cm}|}{\textbf{Diagnosis:}  }\\
+    \hline
+\end{tabular}
+\\
+\\
+\noindent\begin{tabular}{|p{11.3cm}|p{7.3cm}|}
+     \hline
+    \textbf{Consultant:}       & \textbf{JRs:}  \\
+    \cline{2-2}
+      & \textbf{SRs:}  \\
+    \hline
+\end{tabular}
+\vspace{0.1cm} % Reduced space
+% Create a two-column layout with fixed positions
+\noindent
+\begin{minipage}[t]{0.45\textwidth}
+\vspace{-1.64cm} % Adjust this value to position the content above the image
+
+    
+ % Replace with your stacked blocks\
+
+\end{minipage}%
+\hfill%
+\begin{minipage}[t]{0.32\textwidth}
+
+\hspace{1cm} % Negative hspace moves content to the left
+    % Date information table - fixed on right\\
+    \begin{tabular}{|p{1.8cm}|p{2.5cm}|}
+    \hline
+     \textbf{Date} &  \textbf{} \\
+        \hline
+ \begin{minipage}[t]{1.7cm}\textbf{Time}\end{minipage} & \begin{minipage}[t]{2.3cm}\raggedright  \end{minipage} \\
+        \hline
+ \begin{minipage}[t]{1.7cm}\textbf{Weight}\end{minipage} & \begin{minipage}[t]{2.3cm}\raggedright  \end{minipage} \\
+        \hline
+ \begin{minipage}[t]{1.7cm}\textbf{Length}\end{minipage} & \begin{minipage}[t]{2.3cm}\raggedright  \end{minipage} \\
+        \hline
+ \begin{minipage}[t]{1.7cm}\textbf{BSA}\end{minipage} & \begin{minipage}[t]{2.3cm}\raggedright  \end{minipage} \\
+        \hline
+ \begin{minipage}[t]{1.7cm}\textbf{TFR}\end{minipage} & \begin{minipage}[t]{2.3cm}\raggedright  \end{minipage} \\
+        \hline
+ \begin{minipage}[t]{1.7cm}\textbf{TFV}\end{minipage} & \begin{minipage}[t]{2.3cm}\raggedright  \end{minipage} \\
+        \hline
+ \begin{minipage}[t]{1.7cm}\textbf{IVM}\end{minipage} & \begin{minipage}[t]{2.3cm}\raggedright  \end{minipage} \\
+        \hline
+ \begin{minipage}[t]{1.7cm}\textbf{IVF}\end{minipage} & \begin{minipage}[t]{2.3cm}\raggedright  \end{minipage} \\
+        \hline
+ \begin{minipage}[t]{1.7cm}\textbf{Feeds}\end{minipage} & \begin{minipage}[t]{2.3cm}\raggedright  \end{minipage} \\
+        \hline
+ \begin{minipage}[t]{1.7cm}\textbf{GIR(mg/kg
+/min)}\end{minipage} & \begin{minipage}[t]{2.3cm}\raggedright  \end{minipage} \\
+        \hline
+ \begin{minipage}[t]{1.7cm}\textbf{k+}\end{minipage} & \begin{minipage}[t]{2.3cm}\raggedright  \end{minipage} \\
+        \hline
+ \begin{minipage}[t]{1.7cm}\textbf{eGFR}\end{minipage} & \begin{minipage}[t]{2.3cm}\raggedright  \end{minipage} \\
+        \hline
+ \begin{minipage}[t]{1.7cm}\textbf{Medicatio
+n}\end{minipage} & \begin{minipage}[t]{2.3cm}\raggedright  \end{minipage} \\
+        \hline
+ \begin{minipage}[t]{1.7cm}\textbf{Na}\end{minipage} & \begin{minipage}[t]{2.3cm}\raggedright  \end{minipage} \\
+        \hline
+ \begin{minipage}[t]{1.7cm}\textbf{Glucose}\end{minipage} & \begin{minipage}[t]{2.3cm}\raggedright  \end{minipage} \\
+        \hline
+
+    \end{tabular}
+\end{minipage}
+
+% Add signature lines at fixed positions from bottom left
+% X=150mm from left, Y=30mm from bottom for JR signature
+\begin{textblock}{70}(150, 267)
+    \textbf{JR Signature:}
+\end{textblock}
+
+% X=150mm from left, Y=50mm from bottom for SR signature
+\begin{textblock}{70}(150, 247)
+    \textbf{SR Signature:}
+\end{textblock}
+
+\end{document}

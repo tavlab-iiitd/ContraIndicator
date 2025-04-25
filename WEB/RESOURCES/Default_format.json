@@ -1,0 +1,170 @@
+{
+    "uuid": "e7d60c12-8182-46b0-9eb4-14289dccb3d0",
+    "datetime": "19-03-2025 00:37:03",
+    "date": "19-03-2025",
+    "default_Bed_count": 16,
+    "default_Sex_count": 3,
+    "default_Entries_count": 5,
+    "default_table_rows_count": 5,
+    "each_sex_value_names": {
+        "Sex_1_name": "Male",
+        "Sex_2_name": "Female",
+        "Sex_3_name": "Other"
+    },
+    "Name": "",
+    "Age_year": "",
+    "Age_month": "",
+    "Sex": "Male",
+    "uhid": "",
+    "bed_number": "none",
+    "diagnosis": " ",
+    "consultants": " ",
+    "jr": "",
+    "sr": "",
+    "each_entry_layout": {
+        "entry_1": {
+            "title": "Respiratory support",
+            "subtitles": {
+                "subtitle_1": {
+                    "content": " ",
+                    "day": " ",
+                    "dose": " ",
+                    "volume": " "
+                }
+            }
+        },
+        "entry_2": {
+            "title": "Sedation, analgesia, and neuromuscular blockade",
+            "subtitles": {
+                "subtitle_1": {
+                    "content": " ",
+                    "day": " ",
+                    "dose": " ",
+                    "volume": " "
+                }
+            }
+        },
+        "entry_3": {
+            "title": "Inotropes and Anti-hypertensives",
+            "subtitles": {
+                "subtitle_1": {
+                    "content": " ",
+                    "day": " ",
+                    "dose": " ",
+                    "volume": " "
+                }
+            }
+        },
+        "entry_4": {
+            "title": "Antimicrobials",
+            "subtitles": {
+                "subtitle_1": {
+                    "content": " ",
+                    "day": " ",
+                    "dose": " ",
+                    "volume": " "
+                }
+            }
+        },
+        "entry_5": {
+            "title": "Feeds",
+            "subtitles": {
+                "subtitle_1": {
+                    "content": " ",
+                    "day": " ",
+                    "dose": " ",
+                    "volume": " "
+                }
+            }
+        },
+        "entry_6": {
+            "title": "Other Medications",
+            "subtitles": {
+                "subtitle_1": {
+                    "content": " ",
+                    "day": " ",
+                    "dose": " ",
+                    "volume": " "
+                }
+            }
+        },
+        "entry_7": {
+            "title": "Supportive care",
+            "subtitles": {
+                "subtitle_1": {
+                    "content": " ",
+                    "day": " ",
+                    "dose": " ",
+                    "volume": " "
+                }
+            }
+        }
+    },
+    "each_table_row_layout": {
+        "row_1": {
+            "row_header_name": "Date",
+            "row_header_description": " "
+        },
+        "row_2": {
+            "row_header_name": "Time",
+            "row_header_description": " "
+        },
+        "row_3": {
+            "row_header_name": "Weight",
+            "row_header_description": " "
+        },
+        "row_4": {
+            "row_header_name": "Length",
+            "row_header_description": " "
+        },
+        "row_5": {
+            "row_header_name": "BSA",
+            "row_header_description": " "
+        },
+        "row_6": {
+            "row_header_name": "TFR",
+            "row_header_description": " "
+        },
+        "row_7": {
+            "row_header_name": "TFV",
+            "row_header_description": " "
+        },
+
+        "row_8": {
+            "row_header_name": "IVM",
+            "row_header_description": " "
+        },
+        "row_9": {
+            "row_header_name": "IVF",
+            "row_header_description": " "
+        },
+        "row_10": {
+            "row_header_name": "Feeds",
+            "row_header_description": " "
+        },
+        "row_11": {
+            "row_header_name": "GIR(mg/kg/min)",
+            "row_header_description": " "
+        },
+        "row_12": {
+            "row_header_name": "k+",
+            "row_header_description": " "
+        },
+        "row_13": {
+            "row_header_name": "eGFR",
+            "row_header_description": " "
+        },
+        "row_14": {
+            "row_header_name": "Medication",
+            "row_header_description": " "
+        },
+        "row_15": {
+            "row_header_name": "Na",
+            "row_header_description": " "
+        },
+        "row_16": {
+            "row_header_name": "Glucose",
+            "row_header_description": " "
+        }
+    }
+}
