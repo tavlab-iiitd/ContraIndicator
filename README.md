@@ -97,6 +97,7 @@ Access the tool at:
 ## **Dashboard Overview**
 
 Upon launching the application, you will be presented with a user-friendly dashboard where you can:
+![Dashboard Screenshot](images/dashboard_ss.png)
 
 - **Input Drug Names**: Click the input field to type or select drugs from a dropdown list.
 - **Add Drug**: Add a drug by pressing the **"Add Tag"** button or pressing **Enter**.
