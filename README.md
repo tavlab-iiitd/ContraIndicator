@@ -30,7 +30,7 @@ This tool was developed as part of the research:
 | Backend (API)  | Flask (Python)    |
 | GUI Interface  | Tkinter           |
 | NLP Extraction | `docx2txt`, RegEx |
-| Visualization  | HTML, CSS, Circos, Tkinter |
+| Visualization  | HTML, CSS, Tkinter |
 | Packaging      | `pyinstaller` or native Python |
 
 ---
@@ -109,14 +109,6 @@ Run runner.exe
 
 ---
 
-## 📊 Interaction History (Web Tool Only)
-
-- Go to **Circos** tab after checking drugs.
-- View timeline of all past interactions.
-- Filter by patient, date range, or interaction type.
-- Export results if needed.
-
----
 
 ## **Dashboard Overview**
 
