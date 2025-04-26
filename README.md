@@ -10,10 +10,12 @@ This tool was developed as part of the research:
 ## 🌟 **Core Features**
 
 ### 🔹 ContraIndicator Web Tool
+- select drugs
+   or 
 - Upload `.doc` prescriptions written by clinicians.
 - NLP-based drug extraction and mapping.
 - Drug–drug interaction check with visual alerts.
-- Historical analysis with Circos visualizations.
+
 
 ### 🔹 ContraIndicator GUI Tool
 - Standalone GUI for offline use.
@@ -100,11 +102,14 @@ Upon launching the application, you will be presented with a user-friendly dashb
 ![Dashboard Screenshot](images/welcome_ss.png)
 
 - **Input Drug Names**: Click the input field to type or select drugs from a dropdown list.
-![Upload/select drugs Screenshot](images/upload_ss.png)
+![Upload/patient_upload/select drugs Screenshot](images/patients_upload.png)
 
 - **Add Drug**: Add a drug by pressing the **"Add Tag"** button or pressing **Enter**.
 - **Review Drug List**: Once you’ve added drugs, click **"Confirm"** or press **Shift + Enter** to review.
+![Upload/select drugs Screenshot](images/upload_drugs.png)
+
 - **Submit Drug List**: Click **"Submit"** to get interaction results.
+![Upload/Results](images/results_ss.png)
 
 Each drug is added as a tag, and you can remove any unwanted drugs before submission.
 
