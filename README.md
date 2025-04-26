@@ -97,9 +97,11 @@ Access the tool at:
 ## **Dashboard Overview**
 
 Upon launching the application, you will be presented with a user-friendly dashboard where you can:
-![Dashboard Screenshot](images/dashboard_ss.png)
+![Dashboard Screenshot](images/welcome_ss.png)
 
 - **Input Drug Names**: Click the input field to type or select drugs from a dropdown list.
+![Upload/select drugs Screenshot](images/upload_ss.png)
+
 - **Add Drug**: Add a drug by pressing the **"Add Tag"** button or pressing **Enter**.
 - **Review Drug List**: Once you’ve added drugs, click **"Confirm"** or press **Shift + Enter** to review.
 - **Submit Drug List**: Click **"Submit"** to get interaction results.
