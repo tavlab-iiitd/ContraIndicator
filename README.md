@@ -113,7 +113,6 @@ Run runner.exe
 ## **Dashboard Overview**
 
 Upon launching the application, you will be presented with a user-friendly dashboard where you can:
-![image4](https://github.com/user-attachments/assets/10f6d708-aee4-49fa-ab70-4a84640ea731)
 
 - **Input Drug Names**: Click the input field to type or select drugs from a dropdown list.
 - **Add Drug**: Add a drug by pressing the **"Add Tag"** button or pressing **Enter**.
@@ -121,18 +120,7 @@ Upon launching the application, you will be presented with a user-friendly dashb
 - **Submit Drug List**: Click **"Submit"** to get interaction results.
 
 Each drug is added as a tag, and you can remove any unwanted drugs before submission.
-![image1](https://github.com/user-attachments/assets/2983723f-2433-4e58-976a-08e345af751c)
-![image6](https://github.com/user-attachments/assets/7bdd67d1-a7ab-4e0d-8b7d-a938f43bb6c2)
 
----
-
-## **Interaction History with Circos Plots**
-
-You can also view the **interaction history** of drugs through visual **Circos plots**. These allow you to see interactions within a specified date range, offering insights into potential patterns and trends.
-
-- **Specify Date Range**: Input start and end dates to filter interactions.
-- **Visual Interpretation**: Circos plots provide an intuitive way to review complex drug interactions.
-![image7](https://github.com/user-attachments/assets/52bb3117-c5a8-470f-9326-bc8cc433cc9b)
 
 ---
 
