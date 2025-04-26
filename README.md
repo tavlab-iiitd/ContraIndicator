@@ -126,7 +126,11 @@ Run runner.exe
 
 - A desktop app window will appear.
 - Type  your treatment chart.
+  ![Upload/Results](images/gui_drugs.png)
+
 - Press **“Check Interactions”** to view results.
+  ![Upload/Results](images/gui_ddi.png)
+
 - Print treatment chart using the toolbar.
 
 > ✅ *No internet required for GUI usage.*
