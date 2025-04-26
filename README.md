@@ -17,8 +17,8 @@ This tool was developed as part of the research:
 
 ### 🔹 ContraIndicator GUI Tool
 - Standalone GUI for offline use.
-- Write or load prescriptions in `.txt` format.
-- Get interaction alerts as you type.
+- Write prescriptions in a user-friendly way(editable).
+- Get interaction alerts as you type by clicking on it.
 - Suitable for bedside or quick use by doctors.
 
 ---
@@ -117,9 +117,9 @@ Run runner.exe
 ```
 
 - A desktop app window will appear.
-- Type or paste your treatment chart.
+- Type  your treatment chart.
 - Press **“Check Interactions”** to view results.
-- Save or open `.txt` files using the toolbar.
+- Print treatment chart using the toolbar.
 
 > ✅ *No internet required for GUI usage.*
 
