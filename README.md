@@ -92,22 +92,6 @@ Access the tool at:
 
 ---
 
-## 🖥️ Run the GUI Application
-
-### Launch the GUI:
-```bash
-cd GUI
-Run runner.exe
-```
-
-- A desktop app window will appear.
-- Type or paste your treatment chart.
-- Press **“Check Interactions”** to view results.
-- Save or open `.txt` files using the toolbar.
-
-> ✅ *No internet required for GUI usage.*
-
----
 
 
 ## **Dashboard Overview**
@@ -124,6 +108,22 @@ Each drug is added as a tag, and you can remove any unwanted drugs before submis
 
 ---
 
+## 🖥️ Run the GUI Application
+
+### Launch the GUI:
+```bash
+cd GUI
+Run runner.exe
+```
+
+- A desktop app window will appear.
+- Type or paste your treatment chart.
+- Press **“Check Interactions”** to view results.
+- Save or open `.txt` files using the toolbar.
+
+> ✅ *No internet required for GUI usage.*
+
+---
 
 
 ---
